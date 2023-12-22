@@ -15,14 +15,23 @@ def LeerDocumento():
         
         listaDatos = file.readlines()
         
-        morosos = [line.strip() for line in listaDatos if "PAGADO" in line]
+        morosos = [line.strip() for line in 
+                   listaDatos if "PAGADO" in line]
 
-    return str(morosos)
+    return (morosos)
 x = LeerDocumento()
 
 LeerDocumento()
 
 def IdentificarPagado():
+    """funcion que crea un fichero en el que se escriben 
+    todas las lineas en las que aparezca la palabra pagado
+    
+    - Parametros:
+        - Recibe una lista
+        
+    - Salida:
+        - La funcion no devuelve nada"""
     
     f = open("PAGADO.txt")
     with open(f, "w") as file:
