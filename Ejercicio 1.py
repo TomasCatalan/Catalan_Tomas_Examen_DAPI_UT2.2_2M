@@ -33,9 +33,11 @@ def IdentificarPagado():
     - Salida:
         - La funcion no devuelve nada"""
     
-    f = open("PAGADO.txt")
+    f = ("PAGADO.txt")
+
+    y = str(x)
     with open(f, "w") as file:
         
-        z = file.write(x)
+        z = file.write(y)
 
 IdentificarPagado()
